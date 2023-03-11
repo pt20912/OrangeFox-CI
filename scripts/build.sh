@@ -85,20 +85,10 @@ if [ $BRANCH_INT -le 6 ]; then
 fi
 
 # lunch the target
-if [ "$BRANCH_INT" -ge 11 ]; then
-    lunch twrp_${DEVICE}-eng || { echo "ERROR: Failed to lunch the target!" && exit 1; }
-else
-    lunch omni_${DEVICE}-eng || { echo "ERROR: Failed to lunch the target!" && exit 1; }
-fi
+lunch omni_m51-eng
 
 # Build the Code
-if [ -z "$J_VAL" ]; then
-    mka -j$(nproc --all) $TARGET || { echo "ERROR: Failed to Build OrangeFox!" && exit 1; }
-elif [ "$J_VAL"="0" ]; then
-    mka $TARGET || { echo "ERROR: Failed to Build OrangeFox!" && exit 1; }
-else
-    mka -j${J_VAL} $TARGET || { echo "ERROR: Failed to Build OrangeFox!" && exit 1; }
-fi
+mka -j${J_VAL} $TARGET
 
 # Exit
 exit 0
