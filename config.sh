@@ -5,7 +5,7 @@ export FOX_BRANCH="fox_12.1"
 export DT_LINK="https://gitlab.com/AsrixAp/a52sxq"
 
 export DEVICE="samsung"
-export OEM="m51"
+export OEM="a52sxq"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
