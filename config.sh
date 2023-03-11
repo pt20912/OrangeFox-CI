@@ -2,7 +2,7 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/arixcuti/twrp_device_m51"
+export DT_LINK="https://gitlab.com/AsrixAp/a52sxq"
 
 export DEVICE="samsung"
 export OEM="m51"
