@@ -2,7 +2,7 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/pt20912/m51_android_12_tree.git"
+export DT_LINK="https://github.com/arixcuti/twrp_device_m51"
 
 export DEVICE="samsung"
 export OEM="m51"
