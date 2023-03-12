@@ -85,7 +85,7 @@ if [ $BRANCH_INT -le 6 ]; then
 fi
 
 # lunch the target
-lunch omni_m51-eng
+lunch twrp_m515f-eng
 
 # Build the Code
 mka -j${J_VAL} $TARGET
