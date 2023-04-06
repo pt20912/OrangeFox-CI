@@ -19,16 +19,3 @@ task:
       image: ghcr.io/sushrut1101/docker:arch
       cpu: 8
       memory: 20G
-
-  Checks_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/pt20912/OrangeFox-CI/main/scripts/checks.sh)"
-
-  Sync_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/pt20912/OrangeFox-CI/main/scripts/sync.sh)"
-
-  Build_script:
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/pt20912/OrangeFox-CI/main/scripts/build.sh)"
-
-  Upload_script:
-      - export TIMEOUT=43200 # Link timeout (in minutes)
-      - bash -c "$(curl -sL https://raw.githubusercontent.com/pt20912/OrangeFox-CI/main/scripts/upload.sh)"
